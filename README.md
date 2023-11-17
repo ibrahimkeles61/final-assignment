@@ -1,46 +1,46 @@
-# Getting Started with Create React App and Redux
+# Sınav Oluşturma ve Bilgi Sorgulama Programı
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+Bu projede amaç hem yöneticinin seçtiği sınıflara, sisteme yüklediği öğrencilerin rastgele bir şekilde yerleştirilmesi ve sınav oturumunun kayıt altına alınması. Hem de öğrencinin sistemden numarasını sorgulatarak kayıtlı olduğu sınavları görüp, seçtiği sınava giriş kartını alabilmesi. Bu bir okul projesiydi ve kullanıcı girişi bulunması gerekmiyordu. O yüzden o özellik eksik.
 
-## Available Scripts
+## Kullandığım Teknolojiler
 
-In the project directory, you can run:
+React.js
 
-### `npm start`
+Router: react-router-dom
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+State Management: react-redux
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Veri Çekmek için: Fetch Api
 
-### `npm test`
+Veri tabanı: Firebase Realtime Database
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Styling: styled-components
 
-### `npm run build`
+Ecxel manüpipaslonu için: Javascript excel kütüphaneleri.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tanıtım
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Projede ana sayfa olarak yönetici veya öğrenci olarak devam edilebilen bir sayfa var.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Yönetici kısmına girildiğinde yeni bir sınav oluşturma veya oluşturulmuş kayıtları listeleme sekmeleri geliyor. Yeni bir sınav oluşturma ekranında kullanıcıdan öğrencilerin ve sınav bilgilerinin istenilen formatta olduğu bir excel tablosu girmesi ve yan tarafta bulunun kısımdan istediği sınıfları işaretlemesi bekleniyor. Eğer sınıflarda yeterli kontenjan varsa sistem devam ediyor ve hem kaydı oluşturup hemde her sınıf için, sınıfta sınava girecek öğrencilerin yazılı olduğu birer excel tablosu çıkarıyor. Kullanıcı eğer planlanmış kayıtlara bakarsa, oradan istediği sınav kaydını silebilir veya o sınavın sınıflarının excel tablolarını çıkarabilir.
 
-### `npm run eject`
+Öğrenci kısmına girildiğinde ise kullanıcı, öğrenci numarasını yazıp sorgulatarak kayıtlı olduğu sınavları görüntüleyebilir, istediği sınav için kendi bilgilerinin olduğu bir giriş kartı çıkartabilir. (Burda canvas kullanarak bir .png dosyası oluşturdum)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Kurulum ve Kullanım
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Bu projeyi bilgisayarınızda çalıştırmak için kod editörünüzde bir klasör açıp, terminalde önce "git init" komutunu, sonra "git clone https://github.com/ibrahimkeles61/final-assignment.git" komutunu çalıştırıp, işlem tamamlandıktan sonra "npm install" (ben npm kullanıyorum) komutuyla gereksinimlerin inmesini beklemelisiniz. Daha sonra terminalde "npm run start" diyerek uygulamayı çalıştırabilirsiniz. Eğer otomatik olarak tarayıcınızda yeni bir sekmede açılmazsa, terminalde "Local:" 'ın yanında yazan adrese tıklayarak (ctrl + click) açılmasını sağlayabilirsiniz.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Görseller
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+![1](https://github.com/ibrahimkeles61/final-assignment/blob/master/project-views/1.jpg?raw=true)
+![2](https://github.com/ibrahimkeles61/final-assignment/blob/master/project-views/2.jpg)
+![3](https://github.com/ibrahimkeles61/final-assignment/blob/master/project-views/3.jpg)
+![4](https://github.com/ibrahimkeles61/final-assignment/blob/master/project-views/4.jpg)
+![5](https://github.com/ibrahimkeles61/final-assignment/blob/master/project-views/5.jpg)
+![6](https://github.com/ibrahimkeles61/final-assignment/blob/master/project-views/6.jpg)
+![7](https://github.com/ibrahimkeles61/final-assignment/blob/master/project-views/7.jpg)
+![8](https://github.com/ibrahimkeles61/final-assignment/blob/master/project-views/8.jpg)
+![9](https://github.com/ibrahimkeles61/final-assignment/blob/master/project-views/9.jpg)
+![10](https://github.com/ibrahimkeles61/final-assignment/blob/master/project-views/10.jpg)
+![11](https://github.com/ibrahimkeles61/final-assignment/blob/master/project-views/11.jpg)
+![12](https://github.com/ibrahimkeles61/final-assignment/blob/master/project-views/12.jpg)
