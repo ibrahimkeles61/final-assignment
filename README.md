@@ -16,7 +16,7 @@ Veri tabanı: Firebase Realtime Database
 
 Styling: styled-components
 
-Ecxel manüpipaslonu için: Javascript excel kütüphaneleri.
+Ecxel manipülasyonu için: Javascript excel kütüphaneleri.
 
 ## Tanıtım
 
